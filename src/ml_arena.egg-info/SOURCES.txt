@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/ml_arena/__init__.py
+src/ml_arena/classification.py
+src/ml_arena/evaluation.py
+src/ml_arena/main.py
+src/ml_arena/regression.py
+src/ml_arena.egg-info/PKG-INFO
+src/ml_arena.egg-info/SOURCES.txt
+src/ml_arena.egg-info/dependency_links.txt
+src/ml_arena.egg-info/top_level.txt
+tests/test_classification.py
+tests/test_evaluation.py
+tests/test_regression.py

@@ -10,7 +10,12 @@ def evaluate_classification(y_test, predictions, probabilities):
 
     f1 = f1_score(y_test, predictions, average='macro')
 
-    roc_auc = roc_auc_score(y_test, probabilities, multi_class='ovr')
+    no_of_classes = len(set(y_test))
+
+    if no_of_classes == 2:
+        roc_auc = roc_auc_score(y_test, probabilities[:,1])
+    else:
+        roc_auc = roc_auc_score(y_test, probabilities, multi_class='ovr')
 
     cm = confusion_matrix(y_test, predictions)
 
